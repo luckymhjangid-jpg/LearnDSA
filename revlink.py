@@ -34,7 +34,15 @@ class SinglyLinkList:
                 print("Value is not present in the list")
             prev.next = temp.next
             temp=None
-
+    def reverse(self):
+        curr=self.head
+        prev=None
+        while(curr !=None):
+            nextnode = curr.next
+            curr.next=prev
+            prev=curr
+            curr=nextnode
+        return prev
     def printLL(self):
         t1= self.head
         while(t1.next !=None):
