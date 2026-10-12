@@ -7,7 +7,7 @@ class SinglyLinkList:
     def __init__(self,head=None):
         self.head = head
 
-    def insertATEnd(self,value):
+    def insertATEnd(self,value)
         temp = Node(value)
         
         if(self.head != None):
